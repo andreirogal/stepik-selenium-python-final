@@ -22,3 +22,14 @@ class ProductPage(BasePage):
                self.browser.find_element(
                    *ProductPageLocators.BASKET_VALUE).text, \
             "Prices do not match"
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(
+            *ProductPageLocators.MSG_PRODUCT_ADDED), \
+            "Success message that product is added is presented, " \
+            "but should not be"
+
+    def should_be_success_message_disappeared(self):
+        assert self.is_disappeared(
+            *ProductPageLocators.MSG_PRODUCT_ADDED), \
+            "Success message that product is added is disappeared"
