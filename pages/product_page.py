@@ -11,7 +11,7 @@ class ProductPage(BasePage):
 
     def should_be_equal_product_name_and_product_added_to_basket(self):
         assert self.browser.find_element(
-            *ProductPageLocators.PRODUCT_NAME).text in \
+            *ProductPageLocators.PRODUCT_NAME).text == \
                self.browser.find_element(
                    *ProductPageLocators.MSG_PRODUCT_ADDED).text, \
             "Names do not match"
