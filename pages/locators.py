@@ -23,7 +23,11 @@ class MainPageLocators:
 
 
 class LoginPageLocators:
+    BTN_REG_SUBMIT = (By.CSS_SELECTOR, "button[name='registration_submit']")
+    EMAIL_FIELD = (By.CSS_SELECTOR, "#id_registration-email")
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
+    PASS_FIELD = (By.CSS_SELECTOR, "#id_registration-password1")
+    PASS_CONFIRM_FIELD = (By.CSS_SELECTOR, "#id_registration-password2")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
 
 
