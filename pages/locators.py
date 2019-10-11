@@ -13,6 +13,10 @@ class BasketPageLocators:
     MSG_BASKET_IS_EMPTY = (By.CSS_SELECTOR, "#content_inner > p")
 
 
+class DropMailLocators:
+    EMAIL = (By.CSS_SELECTOR, ".email")
+
+
 class MainPageLocators:
     pass
 
