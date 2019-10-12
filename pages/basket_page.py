@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 from .base_page import BasePage
 from .locators import BasketPageLocators
 
@@ -11,4 +12,3 @@ class BasketPage(BasePage):
         assert "basket is empty" in \
                self.browser.find_element(
                    *BasketPageLocators.MSG_BASKET_IS_EMPTY).text
-        # todo other languages

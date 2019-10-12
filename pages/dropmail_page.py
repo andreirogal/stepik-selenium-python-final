@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 from .base_page import BasePage
 from .locators import DropMailLocators
 
